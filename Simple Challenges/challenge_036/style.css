@@ -1,0 +1,101 @@
+:root{
+  --main-f: 'Titillium Web', sans-serif;
+  --dark-c: #242D3C;
+  --light-c: #ffffff;
+  --gray-c: #242d3cab;
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--light-c);
+  color: var(--dark-c);
+  font-family: var(--main-f);
+  padding: 1rem;
+}
+p{
+  line-height: 1.5;
+  color: var(--gray-c);
+}
+.header-text{
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.header-text > h1{
+  font-size: 2.5rem;
+}
+.header-text > p{
+  font-size: 1.2rem;
+}
+
+#circle{
+  width: 450px;
+  height: 450px;
+  margin: auto;
+  background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('img/bg.jpg') no-repeat center / cover;
+  color: var(--light-c);
+  padding: 2rem;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#circle > h1{
+  text-align: center;
+  width: 80%;
+  margin: auto;
+}
+#circle > p{
+  color: rgba(255,255,255,0.7);
+  line-height: 1.7;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+}
+#circle .box-left,
+#circle .box-right{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--dark-c);
+  width: 400px;
+}
+#circle .box-left img,
+#circle .box-right img{
+  object-fit: cover;
+  display: block;
+  margin: 0 1rem;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 0.5rem solid var(--light-c);
+}
+#circle .box-left > div{
+  text-align: right;
+}
+#circle .box-right > div{
+  text-align: left;
+}
+#circle .box-left > div > p,
+#circle .box-right > div > p{
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+
+
+
+
+
+
+
+
+

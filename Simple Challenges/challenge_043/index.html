@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.min.css">
+  <title>Simple Bitcoin Dashboard</title>
+</head>
+<body>
+
+  <!-- sidenav -->
+  <aside id="sidenav">
+    <a href="#">
+      <i class="fas fa-tachometer-alt"></i>
+    </a>
+    <a href="#">
+      <i class="fas fa-exchange-alt"></i>
+    </a>
+    <a href="#">
+      <i class="far fa-user"></i>
+    </a>
+    <a href="#">
+      <i class="fas fa-tools"></i>
+    </a>
+  </aside>
+
+  <!-- main content -->
+  <section id="main-content">
+    <!-- navbar -->
+    <nav id="main-nav">
+      <div class="container">
+        <h1 id="brand"><i class="fab fa-artstation"></i> Tradix</h1>
+        <div class="info">
+          <div class="money">
+            <span id="bitcoin">0.0025 <i class="fab fa-bitcoin"></i></span>
+            <span id="current-currency">219.63 USD</span>
+          </div>
+          <div class="account">
+            <!-- <img src="" alt=""> -->
+            <i class="far fa-user"></i> Osama Elzero <i class="fas fa-chevron-down"></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- content -->
+    <section id="content" class="container">
+      <!-- buy sell -->
+      <section class="buy-sell">
+        <!-- greeting title -->
+        <h2><span>Welcome Back, </span>Username</h2>
+        <!-- btns -->
+        <div class="btns">
+          <a href="#" class="buy-btn active">Buy</a>
+          <a href="#" class="sell-btn">Sell</a>
+        </div>
+        <!-- form -->
+        <form action="/">
+          <h4>Currency</h4>
+          <div class="group-input">
+            <p>Bitcoin <i class="fas fa-chevron-down"></i></p>
+            <input type="text" disabled value="125.00 USD">
+          </div>
+          <h4>Payment Method</h4>
+          <div class="group-input">
+            <p>Bitcoin <i class="fas fa-chevron-down"></i></p>
+            <input type="text" disabled value="125.00 USD">
+          </div>
+          <h4>Enter your amount</h4>
+          <div class="group-input">
+            <p>0.0214 BTC</p>
+            <input type="text" disabled value="125.00 USD">
+          </div>
+          <div class="monthly-limit">
+            <h4>Monthy Limit</h4>
+            <h4>$49750 remaining</h4>
+          </div>
+          <input type="submit" value="Exchange Now">
+        </form>
+        <p class="note">Note: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo quasi facilis animi optio, quos saepe cum omnis dolorem autem natus!</p>
+      </section>
+
+      <!-- buyer seller -->
+      <section class="buyer-seller">
+        <!-- accounts -->
+        <div class="accounts">
+          <div class="buyer-info">
+            <img src="https://via.placeholder.com/50" alt="user">
+            <div>
+              <h2>Buyer</h2>
+              <h4>Eman</h4>
+              <a href="#">hello@example.com</a>
+            </div>
+          </div>
+          <div class="seller-info">
+            <div>
+              <h2>Seller</h2>
+              <h4>Osama</h4>
+              <a href="#">hello@example.com</a>
+            </div>
+            <img src="https://via.placeholder.com/50" alt="user">
+          </div>
+        </div>
+        <!-- details -->
+        <div class="details">
+          <!-- boxes -->
+          <div class="box">
+            <h4>You are selling</h4>
+            <h4>0.00254 BTC</h4>
+          </div>
+          <div class="box">
+            <h4>Payment Method</h4>
+            <h4>Bank of America Bank ***********5245</h4>
+          </div>
+          <div class="box">
+            <h4>Exchange Rate</h4>
+            <h4>0.00212455 BTC</h4>
+          </div>
+          <div class="box">
+            <h4>Fee</h4>
+            <h4>$28.00 USD</h4>
+          </div>
+          <div class="box">
+            <h4>Total</h4>
+            <h4>$854.00 USD</h4>
+          </div>
+          <div class="box">
+            <h4>Vat</h4>
+            <h4 class="vat">$25.00 USD</h4>
+          </div>
+          <div class="box">
+            <h4>Sub Total</h4>
+            <h4>$1232.00 USD</h4>
+          </div>
+        </div>
+      </section>
+    </section>
+
+  </section>
+  
+</body>
+</html>

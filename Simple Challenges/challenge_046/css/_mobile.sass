@@ -1,0 +1,128 @@
+@media screen and ( max-width: 768px )
+  // medium & small screens
+  #main-header
+    #main-nav
+      & > .container
+        position: relative
+        display: block
+        .nav-list
+          opacity: 0
+          flex-direction: column
+          overflow: clip
+          height: 0
+          transition: $ts
+          font-size: 1.5rem
+          margin-top: 4rem
+        #openNav, #closeNav
+          display: block
+          position: absolute
+          top: 0
+          right: 0
+          transition: $ts
+          opacity: 0
+          pointer-events: none
+          &:hover
+            color: $main-c
+          &.active
+            opacity: 1
+            pointer-events: auto
+        li:nth-child(6)
+          &:hover .dropdown-menu
+            height: auto
+          .dropdown-menu
+            position: relative !important
+            overflow: hidden
+            height: 0
+  #about-us
+    & > .container
+      grid-template-columns: 1fr !important
+      gap: 3rem
+  #services
+    & > .container
+      grid-template-columns: 1fr 1fr
+  #team, #pricing
+    & > p
+      width: 90%
+      margin: auto
+    .container
+      grid-template-columns: 1fr 1fr
+  #clients
+    .swiper-container-brands
+      width: 100%
+      margin: auto
+      height: 100%
+      padding: 3rem 0
+      overflow: hidden
+  #pricing
+    .container
+      grid-template-columns: 1fr
+  #faq
+    & > p
+      width: 90%
+      margin: auto
+  #main-footer
+    .container
+      grid-template-columns: 1fr 1fr
+      div:nth-of-type(3)
+        grid-column: 1 / 2 span
+        form
+          input,textarea
+            width: 90%
+
+@media screen and ( max-width: 576px )
+  // small & narrow screens
+  :root
+    font-size: 14px
+  #main-header
+    #showcase
+      padding: 2rem 0
+      & > div.container
+        grid-template-columns: 1fr
+        gap: 4rem
+  #services
+    & > p
+      width: 90%
+    & > .container
+      grid-template-columns: 1fr
+  #why-choose-us
+    .container-fluid
+      grid-template-columns: 1fr
+    .numbers .items
+      grid-template-columns: repeat(2, 1fr)
+      gap: 1rem
+    #call
+      .container-fluid
+        flex-direction: column
+        text-align: center
+        .content
+          width: 100%
+          margin-bottom: 2rem
+    #social-calling .container
+      .social, .calling
+        grid-template-columns: 1fr
+      .social
+        border-bottom: 3px dashed #eee
+        padding-bottom: 1rem
+        margin-bottom: 2rem
+  #portfolio
+    .container
+      .gallery
+        grid-template-columns: 1fr
+  #testimonials
+    .swiper-container
+      padding: 3rem 0
+      .swiper-slide
+        text-align: left
+        font-size: 14px
+        width: 100%
+  #team
+    .container
+      grid-template-columns: 1fr
+  #main-footer
+    .container
+      grid-template-columns: 1fr !important
+      div:nth-of-type(3)
+        grid-column: 1 / 2
+        form
+          input,textarea
+            width: 85%
